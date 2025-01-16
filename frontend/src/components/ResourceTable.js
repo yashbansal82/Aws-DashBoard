@@ -1,6 +1,6 @@
 // src/components/ResourceTable.js
 import React, { useEffect, useState } from "react";
-import { getAWSResources } from "../services/awsService";
+import { getAWSResources } from "../services/awsService.js";
 import ResourceRow from "./ResourceRow";
 import "./ResourceTable.css"; // Import CSS for styling
 
@@ -18,7 +18,7 @@ const ResourceTable = () => {
   return (
     <div className="resource-table">
       <div className="resource-header">
-        <div>Logo</div>
+        {/* <div>Logo</div> */}
         <div>Name</div>
         <div>Options</div>
         <div>Details</div>

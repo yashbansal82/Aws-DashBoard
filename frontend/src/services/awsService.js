@@ -1,4 +1,4 @@
-// src/services/awsService.js
+
 import axios from "axios";
 
 export const getAWSResources = async () => {
