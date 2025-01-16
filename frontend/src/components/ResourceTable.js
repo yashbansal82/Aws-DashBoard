@@ -10,6 +10,7 @@ const ResourceTable = () => {
   useEffect(() => {
     const fetchResources = async () => {
       const data = await getAWSResources();
+      console.log(data);
       setResources(data);
     };
     fetchResources();
@@ -20,7 +21,7 @@ const ResourceTable = () => {
       <div className="resource-header">
         {/* <div>Logo</div> */}
         <div>Name</div>
-        <div>Options</div>
+        <div>Regions</div>
         <div>Details</div>
       </div>
       {resources.map((resource) => (

@@ -1,7 +1,7 @@
-/* src/components/ResourceRow.css */
+
 .resource-row {
-  display: flex;
-  align-items: center;
+  display: flex; 
+  align-items: center; 
   padding: 10px 15px;
   border-bottom: 1px solid #e0e0e0;
   background-color: #ffffff;
@@ -12,21 +12,31 @@
   background-color: #f9f9f9;
 }
 
+/* First Column: Resource Logo */
+.resource-logo {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .resource-logo img {
   width: 40px;
   height: 40px;
   object-fit: contain;
-  margin-right: 10px;
 }
 
+/* Second Column: Resource Name */
 .resource-name {
-  flex: 2;
+  flex: 2; 
   font-size: 16px;
   font-weight: 500;
+  text-align: center; 
 }
 
+/* Third Column: Dropdown Menu */
 .resource-options {
-  flex: 1;
+  flex: 1; 
   display: flex;
   justify-content: center;
 }
@@ -36,10 +46,30 @@
   font-size: 14px;
   border-radius: 4px;
   border: 1px solid #ccc;
+  width: 100%;
+  max-width: 150px; /* Optional: Limit dropdown width */
 }
 
-.resource-details {
-  flex: 1;
-  text-align: center;
-  font-size: 14px;
+.resource-row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
 }
+
+.resource-name,
+.resource-region,
+.resource-options {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.resource-name p,
+.resource-region p {
+  margin: 0;
+}
+
+.resource-options select {
+  width: 100%;
+}
+

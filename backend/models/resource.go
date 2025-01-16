@@ -6,4 +6,5 @@ type Resource struct {
 	Name          string `json:"name"`
 	Configuration string `json:"configuration"`
 	Cost          string `json:"cost"`
+	Region				string `json:"region"`
 }

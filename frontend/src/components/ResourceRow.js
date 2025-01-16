@@ -1,40 +1,44 @@
-// src/components/ResourceRow.js
-import React, { useState } from "react";
-import "./ResourceRow.css"; // Import CSS for styling
+import React from "react";
+import PropTypes from "prop-types";
+import "./ResourceRow.css";
 
-const ResourceRow = ({ resource }) => {
-  const [selectedOption, setSelectedOption] = useState("ID");
+function ResourceRow({ resource }) {
+  // Ensure `resource` is defined before accessing its properties
+  if (!resource) {
+    return <div>Invalid resource data</div>;
+  }
 
   return (
     <div className="resource-row">
-      {/* Logo
-      <div className="resource-logo">
-        <img src={resource.logo} alt={`${resource.name} logo`} />
-      </div> */}
-
-      {/* Name */}
-      <div className="resource-name">{resource.name}</div>
-
-      {/* Dropdown */}
-      <div className="resource-options">
-        <select
-          value={selectedOption}
-          onChange={(e) => setSelectedOption(e.target.value)}
-        >
-          <option value="ID">ID</option>
-          <option value="Configuration">Configuration</option>
-          <option value="Cost">Cost</option>
-        </select>
+      {/* First Column: Resource Name */}
+      <div className="resource-name">
+        <p>{resource.name}</p>
       </div>
 
-      {/* Details */}
-      <div className="resource-details">
-        {selectedOption === "ID" && resource.id}
-        {selectedOption === "Configuration" && resource.configuration}
-        {selectedOption === "Cost" && resource.cost}
+      {/* Second Column: Resource Regions */}
+      <div className="resource-name">
+        <p>{resource.region}</p>
+      </div>
+
+      {/* Third Column: Dropdown Menu */}
+      <div className="resource-options">
+        <select>
+          <option>ID:{resource.id}</option>
+          <option>Configuration: {resource.configuration}</option>
+          <option>Cost:{resource.cost}</option>
+        </select>
       </div>
     </div>
   );
+}
+
+// Validate the props using PropTypes
+ResourceRow.propTypes = {
+  resource: PropTypes.shape({
+    logo: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    region: PropTypes.string.isRequired,
+  }),
 };
 
 export default ResourceRow;

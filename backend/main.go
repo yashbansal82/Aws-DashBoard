@@ -3,14 +3,27 @@ package main
 import (
 	"log"
 	"net/http"
+
 	"aws-dashboard-backend/routes"
+	"github.com/gorilla/mux"
+	"github.com/rs/cors"
 )
 
 func main() {
-	http.HandleFunc("/resources", routes.GetResources)
+	router := mux.NewRouter()
+	router.HandleFunc("/resources", routes.GetResources).Methods("GET")
 
-	log.Println("Server is running on port 8080...")
-	if err := http.ListenAndServe(":8080", nil); err != nil {
-		log.Fatalf("Error starting server: %s", err)
-	}
+	// Enable CORS
+	corsHandler := cors.New(cors.Options{
+		AllowedOrigins:   []string{"http://localhost:3000"}, // Allow frontend origin
+		AllowedMethods:   []string{"GET", "POST", "PUT", "DELETE"},
+		AllowedHeaders:   []string{"Content-Type", "Authorization"},
+		AllowCredentials: true,
+	})
+
+	// Wrap the router with the CORS middleware
+	handler := corsHandler.Handler(router)
+
+	log.Println("Server running on http://localhost:8080")
+	log.Fatal(http.ListenAndServe(":8080", handler))
 }

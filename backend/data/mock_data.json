@@ -4,139 +4,159 @@
     "logo": "https://example.com/ec2-logo.png",
     "name": "EC2",
     "configuration": "t2.micro, 8GB Storage",
-    "cost": "$25/month"
+    "cost": "$25/month",
+    "region": "us-east-1"
   },
   {
     "id": 2,
     "logo": "https://example.com/s3-logo.png",
     "name": "S3",
     "configuration": "100GB Bucket",
-    "cost": "$10/month"
+    "cost": "$10/month",
+    "region": "us-west-2"
   },
   {
     "id": 3,
     "logo": "https://example.com/rds-logo.png",
     "name": "RDS",
     "configuration": "db.t2.micro, 5GB Storage",
-    "cost": "$50/month"
+    "cost": "$50/month",
+    "region": "eu-central-1"
   },
   {
     "id": 4,
     "logo": "https://example.com/lambda-logo.png",
     "name": "Lambda",
     "configuration": "512MB Memory, 1M requests",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "ap-south-1"
   },
   {
     "id": 5,
     "logo": "https://example.com/elasticache-logo.png",
     "name": "ElastiCache",
     "configuration": "cache.t2.micro, 5GB Storage",
-    "cost": "$20/month"
+    "cost": "$20/month",
+    "region": "us-east-1"
   },
   {
     "id": 6,
     "logo": "https://example.com/route53-logo.png",
     "name": "Route 53",
     "configuration": "DNS Management",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "global"
   },
   {
     "id": 7,
     "logo": "https://example.com/cloudfront-logo.png",
     "name": "CloudFront",
     "configuration": "CDN",
-    "cost": "$10/month"
+    "cost": "$10/month",
+    "region": "global"
   },
   {
     "id": 8,
     "logo": "https://example.com/sqs-logo.png",
     "name": "SQS",
     "configuration": "Standard Queue",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "us-east-1"
   },
   {
     "id": 9,
     "logo": "https://example.com/sns-logo.png",
     "name": "SNS",
     "configuration": "Standard Topic",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "us-west-1"
   },
   {
     "id": 10,
     "logo": "https://example.com/vpc-logo.png",
     "name": "VPC",
     "configuration": "Default VPC",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "us-east-2"
   },
   {
     "id": 11,
     "logo": "https://example.com/iam-logo.png",
     "name": "IAM",
     "configuration": "User Management",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "global"
   },
   {
     "id": 12,
     "logo": "https://example.com/cloudwatch-logo.png",
     "name": "CloudWatch",
     "configuration": "Monitoring",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "us-west-2"
   },
   {
     "id": 13,
     "logo": "https://example.com/cloudtrail-logo.png",
     "name": "CloudTrail",
     "configuration": "Logging",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "eu-west-1"
   },
   {
     "id": 14,
     "logo": "https://example.com/config-logo.png",
     "name": "Config",
     "configuration": "Configuration Management",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "us-east-1"
   },
   {
     "id": 15,
     "logo": "https://example.com/waf-logo.png",
     "name": "WAF",
     "configuration": "Web Application Firewall",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "global"
   },
   {
     "id": 16,
     "logo": "https://example.com/shield-logo.png",
     "name": "Shield",
     "configuration": "DDoS Protection",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "global"
   },
   {
     "id": 17,
     "logo": "https://example.com/secrets-manager-logo.png",
     "name": "Secrets Manager",
     "configuration": "Secrets Management",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "ap-southeast-1"
   },
   {
     "id": 18,
     "logo": "https://example.com/kms-logo.png",
     "name": "KMS",
     "configuration": "Key Management",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "us-east-1"
   },
   {
     "id": 19,
     "logo": "https://example.com/organizations-logo.png",
     "name": "Organizations",
     "configuration": "Account Management",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "global"
   },
   {
     "id": 20,
     "logo": "https://example.com/cloudformation-logo.png",
     "name": "CloudFormation",
     "configuration": "Infrastructure as Code",
-    "cost": "$5/month"
+    "cost": "$5/month",
+    "region": "us-west-1"
   }
 ]
