@@ -1,0 +1,22 @@
+/* src/components/ResourceTable.css */
+.resource-table {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resource-header {
+  display: flex;
+  padding: 10px 15px;
+  font-weight: bold;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+.resource-header > div {
+  flex: 1;
+  text-align: center;
+}

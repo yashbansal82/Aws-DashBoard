@@ -1,0 +1,45 @@
+/* src/components/ResourceRow.css */
+.resource-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  transition: background 0.3s;
+}
+
+.resource-row:hover {
+  background-color: #f9f9f9;
+}
+
+.resource-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.resource-name {
+  flex: 2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.resource-options {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.resource-options select {
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.resource-details {
+  flex: 1;
+  text-align: center;
+  font-size: 14px;
+}
