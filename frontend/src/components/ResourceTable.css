@@ -1,5 +1,5 @@
 /* src/components/ResourceTable.css */
-.resource-table {
+/* .resource-table {
   width: 80%;
   margin: 20px auto;
   border: 1px solid #ccc;
@@ -19,4 +19,46 @@
 .resource-header > div {
   flex: 1;
   text-align: center;
+} */
+.resource-table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
+
+.resource-header,
+.resource-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.resource-header {
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+}
+
+.resource-row:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.resource-options button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.resource-options button:hover {
+  background-color: #0056b3;
+}
+
